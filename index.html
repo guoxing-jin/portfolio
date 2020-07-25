@@ -1,11 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justin Jin</title>
-</head>
-<body>
-    <p>test</p>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Guoxing Jin</title>
+        <style>
+            @font-face {
+                font-family: 'Work Sans';
+                font-weight: 400;
+                font-display: swap;
+                src: url(./assets/worksans-regular-webfont.woff);
+            }
+            @font-face {
+                font-family: 'Work Sans';
+                font-weight: 300;
+                font-display: swap;
+                src: url(./assets/worksans-light-webfont.woff);
+            }
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                background-color: #fffdfa;
+            }
+            main {
+                max-width: 640px;
+                position: relative;
+                top: 80px;
+                left: 160px;
+            }
+            .introduction {
+                margin-bottom: 72px;
+            }
+            .introduction h1 {
+                font: 300 30px/1.3 'Work Sans', sans-serif;
+                margin-bottom: 24px;
+            }
+            .introduction h1 img {
+                width: 128px;
+                visibility: hidden;
+                position: absolute;
+                top: -40px;
+                left: 480px;
+            }
+            .introduction h1 span:hover {
+                cursor: crosshair;
+            }
+            .introduction h1 span:hover ~ img {
+                visibility: visible;
+            }
+            .introduction div {
+                display: flex;
+            }
+            .introduction div a {
+                font: 400 18px 'Work Sans', sans-serif;
+                color: #888;
+                text-decoration-line: underline;
+                margin-right: 24px;
+            }
+            .introduction div a:hover {
+                color: #000;
+            }
+            .introduction div span {
+                font: italic 400 18px 'Work Sans', sans-serif;
+                display: none;
+            }
+            .introduction div a:nth-of-type(1):hover ~ span:nth-of-type(1) {
+                display: inline;
+            }
+            .introduction div a:nth-of-type(2):hover ~ span:nth-of-type(2) {
+                display: inline;
+            }
+            .introduction div a:nth-of-type(3):hover ~ span:nth-of-type(3) {
+                display: inline;
+            }
+            .divider {
+                font: 300 18px 'Work Sans', sans-serif;
+            }
+            .selected-work h4 {
+                font: 300 18px 'Work Sans', sans-serif;
+                margin-bottom: 8px;
+            }
+            .selected-work article h1 {
+                font: 300 28px 'Work Sans', sans-serif;
+            }
+            .selected-work article h1 a {
+                font: 400 18px 'Work Sans', sans-serif;
+                color: #888;
+                text-decoration-line: underline;
+                margin-left: 8px;
+            }
+            .selected-work article h1 a:hover {
+                color: #000;
+                cursor: pointer;
+            }
+            .selected-work article p {
+                font: 400 18px 'Work Sans', sans-serif;
+                margin-bottom: 72px;
+            }
+            .selected-work article span {
+                font: italic 400 18px/1.3 'Work Sans', sans-serif;
+                color: #888;
+            }
+            .selected-work article span:hover {
+                color: #000;
+                cursor: crosshair;
+            }
+            .selected-work article img {
+                width: 128px;
+                visibility: hidden;
+                position: absolute;
+                top: 440px;
+                left: 320px;
+            }
+            .selected-work article span:hover ~ img {
+                visibility: visible;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="introduction">
+                <h1>
+                    Hi, I'm Guoxing Jin. I create digital experience with
+                    <span>design and programming</span>. Previously interned at
+                    GarageSocial as UI developer. Currently seeking junior-level
+                    UI design | development opportunities.
+                    <img src="./assets/typing-cat.gif" alt="Typing cat" />
+                </h1>
+                <div>
+                    <a href="mailto:justin.jin0614@gmail.com">Email</a>
+                    <a href="./assets/résumé.pdf" target="_blank"
+                        >Résumé (710Kb)</a
+                    >
+                    <a href="https://github.com/guoxing-jin" target="_blank"
+                        >GitHub</a
+                    >
+                    <span>* open default email client</span>
+                    <span>* open PDF file in new tab</span>
+                    <span>* go to GitHub</span>
+                </div>
+            </div>
+            <p class="divider">* * *</p>
+            <div class="selected-work">
+                <h4>Selected Work</h4>
+                <article>
+                    <h1>
+                        Expense Tracker
+                        <a href="https://expense-tracker.online" target="_blank"
+                            >Go to site
+                        </a>
+                    </h1>
+                    <p>
+                        An expense tracking web app built with React, Redux, and
+                        Firebase.
+                    </p>
+                    <span>
+                        * VPN is needed to use the app due to Google Firebase
+                        service isn't available from mainland China
+                    </span>
+                    <img
+                        src="./assets/trump-at-western-wall.gif"
+                        alt="Trump at Western Wall"
+                    />
+                </article>
+            </div>
+        </main>
+    </body>
 </html>
