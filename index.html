@@ -15,13 +15,15 @@
                 font-family: 'Work Sans';
                 font-weight: 400;
                 font-display: swap;
-                src: url('https://guoxing-jin-design-1302728958.cos.ap-nanjing.myqcloud.com/worksans-regular-webfont.woff');
+                src: url(https://guoxing-jin-design-1302728958.cos.ap-nanjing.myqcloud.com/worksans-regular-webfont.woff)
+                    format('woff');
             }
             @font-face {
                 font-family: 'Work Sans';
                 font-weight: 300;
                 font-display: swap;
-                src: url('https://guoxing-jin-design-1302728958.cos.ap-nanjing.myqcloud.com/worksans-light-webfont.woff');
+                src: url(https://guoxing-jin-design-1302728958.cos.ap-nanjing.myqcloud.com/worksans-light-webfont.woff)
+                    format('woff');
             }
             * {
                 box-sizing: border-box;
@@ -33,10 +35,10 @@
             }
             main {
                 max-width: 640px;
+                min-height: 600px;
                 position: relative;
                 top: 80px;
                 left: 160px;
-                margin-bottom: 48px;
             }
             .introduction {
                 margin-bottom: 72px;
@@ -88,17 +90,17 @@
             }
             .selected-work h4 {
                 font: 300 18px 'Work Sans', sans-serif;
-                margin-bottom: 16px;
+                margin-bottom: 24px;
             }
             .selected-work article h1 {
                 font: 300 28px 'Work Sans', sans-serif;
-                margin-bottom: 8px;
+                margin-bottom: 4px;
             }
             .selected-work article h1 a {
                 font: 400 18px 'Work Sans', sans-serif;
                 color: #888;
                 text-decoration-line: underline;
-                margin-left: 8px;
+                margin-left: 16px;
             }
             .selected-work article h1 a:hover {
                 color: #000;
