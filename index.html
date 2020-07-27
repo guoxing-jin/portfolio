@@ -104,15 +104,15 @@
                 color: #000;
                 cursor: pointer;
             }
-            .selected-work article p {
+            .selected-work article p:first-of-type {
                 font: 400 18px 'Work Sans', sans-serif;
                 margin-bottom: 72px;
             }
-            .selected-work article span {
+            .selected-work article p:last-of-type {
                 font: italic 400 18px/1.35 'Work Sans', sans-serif;
                 color: #888;
             }
-            .selected-work article span:hover {
+            .selected-work article p:last-of-type:hover {
                 color: #000;
                 cursor: crosshair;
             }
@@ -123,7 +123,7 @@
                 top: 400px;
                 left: 320px;
             }
-            .selected-work article span:hover ~ img {
+            .selected-work article p:last-of-type:hover ~ img {
                 visibility: visible;
             }
         </style>
@@ -170,10 +170,10 @@
                         An expense tracking web app built with React, Redux, and
                         Firebase.
                     </p>
-                    <span>
+                    <p>
                         * VPN is needed to use the app due to Google Firebase
                         service isn't available from mainland China
-                    </span>
+                    </p>
                     <img
                         src="https://guoxing-jin-design-1302728958.cos.ap-nanjing.myqcloud.com/trump-at-western-wall.gif"
                         alt="Trump at Western Wall"
